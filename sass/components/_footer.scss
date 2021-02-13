@@ -29,6 +29,10 @@
   font-style: normal;
   margin-bottom: 60px;
 
+  @include media($desktop) {
+    margin-bottom: 0;
+  }
+
   .footer-contacts-list {
     margin-top: 0px;
     margin-bottom: 0px;

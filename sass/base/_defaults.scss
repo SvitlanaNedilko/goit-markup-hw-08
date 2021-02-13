@@ -51,7 +51,7 @@ ul {
     line-height: 1.17;
     text-align: center;
 
-    @include media($tablet) {
+    @include media($desktop) {
       margin-bottom: 50px;
       font-size: 36px;
       line-height: 1.17;
