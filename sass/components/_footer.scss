@@ -1,0 +1,135 @@
+.footer {
+  padding: 60px 0;
+  background-color: $background-footer-color;
+
+  .flex-footer {
+    text-align: center;
+
+    .logo-link {
+      margin: 0 auto 20px;
+    }
+
+    @include media($desktop) {
+      display: flex;
+      align-items: baseline;
+      text-align: left;
+    }
+  }
+}
+
+.social-wrapper {
+  @include media($tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+.footer-contacts {
+  font-style: normal;
+  margin-bottom: 60px;
+
+  .footer-contacts-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    .contacts-address {
+      color: $white-text-background-color;
+    }
+
+    .contacts-link {
+      display: block;
+      color: $mail-tell-foter-color;
+      text-decoration: none;
+    }
+
+    & > li:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.footer-socials {
+  margin-bottom: 60px;
+  @include media($desktop) {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
+
+  .join {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: $white-text-background-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+}
+
+.subscription-form {
+  text-align: center;
+
+  @include media($desktop) {
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+  }
+
+  .subscription-lable {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $white-text-background-color;
+
+    @include media($desktop) {
+      margin-left: 93px;
+    }
+  }
+
+  .subscription-input {
+    display: block;
+    box-sizing: border-box;
+    width: calc(100% - 30px);
+    height: 50px;
+    margin: 20px auto;
+    padding-left: 10px;
+
+    background-color: $background-footer-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    @include media($tablet) {
+      width: 450px;
+    }
+
+    @include media($desktop) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+  }
+
+  .subscription-icon {
+    margin-left: 10px;
+  }
+
+  .button {
+    margin: 0 auto;
+    max-height: 50px;
+  }
+}

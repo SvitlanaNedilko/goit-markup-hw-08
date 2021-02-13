@@ -1,0 +1,60 @@
+body {
+  background-color: $white-text-background-color;
+  color: $primary-text-color;
+  font-family: $main-font-family;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include media($mobile) {
+    width: $mobile;
+  }
+
+  @include media($tablet) {
+    width: $tablet;
+  }
+
+  @include media($desktop) {
+    width: $desktop;
+  }
+}
+
+/* section title */
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include media($desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .section-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    @include media($tablet) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.17;
+    }
+  }
+}

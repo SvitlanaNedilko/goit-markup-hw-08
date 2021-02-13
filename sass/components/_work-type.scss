@@ -1,0 +1,39 @@
+.work-types {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  .work-type {
+    position: relative;
+    margin-top: 0px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    & > img {
+      display: block;
+    }
+
+    & > .lable {
+      position: absolute;
+      margin: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      background-color: $background-lable;
+
+      text-align: center;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      color: $white-text-background-color;
+    }
+  }
+}
