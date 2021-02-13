@@ -31,16 +31,68 @@
             aria-label="переключатель мобильного меню"
           >
             <use
-              class="icon-cross"
-              href="./images/icon/symbol-defs3.svg#icon-close"
-            ></use>
-            <use
               class="icon-menu"
               href="./images/icon/symbol-defs3.svg#icon-menu-hader"
             ></use>
           </svg>
         </button>
-        <div class="menu-container" data-menu>
+
+        <!-- мобильное меню -->
+
+        <div class="mobile-menu" data-menu>
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="true"
+            data-menu-close
+          >
+            <svg
+              class="icon-nav"
+              width="38"
+              height="38"
+              aria-label="закрыть мобильное меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/icon/symbol-defs3.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-links">
+              <li>
+                <a href="./index.html" class="mobile-link current">Студия</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="mobile-link">Портфолио</a>
+              </li>
+              <li><a href="" class="mobile-link">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu-bottom">
+              <a class="mobile-phone" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+              <a class="mobile-mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <ul class="mobile-socials">
+                <li class="mobile-socials-link">
+                  <a href="">Instagram</a>
+                </li>
+                <li class="mobile-socials-link">
+                  <a href="">Twitter</a>
+                </li>
+                <li class="mobile-socials-link">
+                  <a href="">Facebook</a>
+                </li>
+                <li class="mobile-socials-link">
+                  <a href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="menu-container">
           <nav class="main-navigation">
             <ul class="nav">
               <li><a href="./index.html" class="link current">Студия</a></li>
